@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.example {
+    margin: 0 auto;
+    text-align: center;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+h1, h2, h3, p {
+    color: #000000;
+    transition: 0.5s;
+}
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+main {
+    width: 240px;
+    background-color: #5C5757;
+    border: 1px solid #5C5757;
+    border-radius: 5px;
+    border: 1px solid #5C5757;
+    box-shadow: 0 10px 30px 2px rgba(0, 0, 0, 0.50);
+    margin: 60px auto;
+}
+
+.display {
+    height: 90px;
+    overflow: hidden;
+    border-bottom: 3px solid #219A90;
+    text-align: right;
+    font-weight: 200;
+    padding: 10px 10px 0 5px;
+}
+
+.small {
+    overflow: hidden;
+    font-size: 0.7rem;
+    color: #79f8e7;
+}
+
+.big {
+    overflow: hidden;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1px;
+}
+
+.button {
+    height: 40px;
+    background-color: #94A4A3;
+    text-align: center;
+    padding-top: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #94bbb8;
+}
+
+.dark-operator {
+    background-color: #687676;
+}
+
+.dark-operator:hover {
+    background-color: #719e9b;
+}
+
+.light-operator {
+    background-color: #D0E9E2;
+    color: #000000;
+}
+
+.light-operator:hover {
+    background-color: #a5c5bd;
+}
+
+
+.radius {
+    border-radius: 0 0 5px 0;
+}
+
+/*
+The zero button is double the size and have a
+radius on the lower left corner
+*/
+
+.zero {
+    grid-column: span 2;
+    border-radius: 0 0 0 5px;
+}
+
+@media (max-width: 600px) {
+    header .mini {
+        display: flex;
+        align-items: center;
+        max-width: 100px;
+        flex-direction: column;
+    }
+    .mini select {
+        height: 30px;
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mini input {
+        width: auto;
+        height: 30px;
+        font-size: 1rem;
+    }
+    .mini button {
+        width: auto;
+        margin-top: 10px;
+    }
+}

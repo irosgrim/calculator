@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Miniräknare</title>
+  </head>
+  <body>
+      <main>
+          <section class="display">
+            <p id="expression" class="small"></p>      
+            <p id="display" class="big"></p>
+          </section>
+          <section class="buttons-frame">
+              <nav class="keyboard" id="keyboard">
+                  <div class="button dark-operator" data-calc-btn="c">C</div>
+                  <div class="button dark-operator" data-calc-btn="-">+/-</div>
+                  <div class="button dark-operator" data-calc-btn="%">%</div>
+                  <div class="button light-operator" data-calc-btn="/">&divide;</div>
+                  <div class="button" data-calc-btn="7">7</div>
+                  <div class="button" data-calc-btn="8">8</div>
+                  <div class="button" data-calc-btn="9">9</div>
+                  <div class="button light-operator" data-calc-btn="*">&times;</div>
+                  <div class="button" data-calc-btn="4">4</div>
+                  <div class="button" data-calc-btn="5">5</div>
+                  <div class="button" data-calc-btn="6">6</div>
+                  <div class="button light-operator" data-calc-btn="-">&minus;</div>
+                  <div class="button" data-calc-btn="1">1</div>
+                  <div class="button" data-calc-btn="2">2</div>
+                  <div class="button" data-calc-btn="3">3</div>
+                  <div class="button light-operator" data-calc-btn="+">&plus;</div>
+                  <div class="button zero" data-calc-btn="0">0</div>
+                  <div class="button" data-calc-btn=".">.</div>
+                  <div class="button radius light-operator" data-calc-btn="=">=</div>
+              </nav>
+          </section>
+      </main>
+      <section class="example">
+        <header>
+          <h3>Shunting yard algorithm, live example</h3>
+        </header>
+      <iframe src="https://irosgrim.github.io/js-playground/?code=Y29uc3Qgb3BQcmVjZWRlbmNlID0gKG9wZXJhdG9yKSA9PiB7CiAgLy9QRU1EQVMKICByZXR1cm4gewogICAgIioiOiA0LAogICAgIi8iOiAzLAogICAgIisiOiAyLAogICAgIi0iOiAxLAogIH1bb3BlcmF0b3JdIHx8IDA7Cn0KCmNvbnN0IHRvUG9zdGZpeCA9IChleHByZXNzaW9uKSA9PiB7CiAgY29uc3QgcXVldWUgPSBbXTsKICBjb25zdCBzdGFjayA9IFtdOwogIGZvciAoY29uc3Qgb3Agb2YgZXhwcmVzc2lvbikgewogICAgaWYgKCFpc05hTihvcCkpIHsKICAgICAgcXVldWUucHVzaChvcCk7CiAgICB9IGVsc2UgewogICAgICB3aGlsZSAoc3RhY2subGVuZ3RoID4gMCAmJiBvcFByZWNlZGVuY2UgKHN0YWNrW3N0YWNrLmxlbmd0aCAtIDFdKSA%2BPSBvcFByZWNlZGVuY2Uob3ApKSB7CiAgICAgICAgcXVldWUucHVzaChzdGFjay5wb3AoKSkKICAgICAgfQogICAgICBzdGFjay5wdXNoKG9wKTsKICAgIH0KICB9CiAgd2hpbGUgKHN0YWNrLmxlbmd0aCA%2BIDApIHsKICAgIHF1ZXVlLnB1c2goc3RhY2sucG9wKCkpOwogIH0KICByZXR1cm4gcXVldWU7Cn0KCmNvbnN0IGV4cHJlc3Npb24gPSBbMTAsICIrIiwgMTMsICIqIiwgNSwgIi0iLCA2LCAiLyIsIDIxXTsKY29uc29sZS5sb2codG9Qb3N0Zml4KGV4cHJlc3Npb24pKTs%3D" frameborder="0" width="800" height="400"></iframe>
+      </section>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
